@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
-import useFetchPokemons from '../hooks/useFetchPokemons'
+import useFetchPokemonsList from '../hooks/useFetchPokemonsList'
 import PokemonCard from '../components/PokemonCard'
 
 const Home = () => {
-  const { data, isLoading, error } = useFetchPokemons()
+  const { data, isLoading, error } = useFetchPokemonsList()
 
   if (isLoading) return <div>Loading...</div>
   if (error instanceof Error) return <div>Error: {error.message}</div>
