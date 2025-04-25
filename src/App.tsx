@@ -5,12 +5,12 @@ import About from './pages/About'
 
 function App() {
   return (
-    <div className='p-4'>
+    <>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
       </Routes>
-    </div>
+    </>
       
   )
 }
