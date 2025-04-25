@@ -68,7 +68,7 @@ const PokemonCard = ({ pokemon }: Props) => {
                 key={t.type.name}
                 className={clsx(backgroundClass, 'text-white rounded-full px-4 m-1')}
               >
-                <p className='capitalize'>{t.type.name}</p>
+                <p className='capitalize text-black font-semibold'>{t.type.name}</p>
               </div>
             )
           })}
