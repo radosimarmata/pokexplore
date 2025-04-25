@@ -57,8 +57,8 @@ const PokemonCard = ({ pokemon }: Props) => {
       <div className='border rounded-lg p-2 bg-gradient-to-r from-gray-700 via-slate-800 to-zinc-700'>
         <h3 className="capitalize text-xl font-bold">{data.name}</h3>
         <div className='flex justify-center items-center space-x-2'>
-          <p>Height: {data.height}</p>
-          <p>Weight: {data.weight}</p>
+          <p>Height: {data.height/10} m</p>
+          <p>Weight: {data.weight/10} kg</p>
         </div>
         <div className="flex justify-center items-center flex-wrap">
           {data.types.map((t) => {
