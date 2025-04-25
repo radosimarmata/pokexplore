@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <h1 className="p-2 text-3xl font-bold">Pokémon List</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {data?.results.map((pokemon) => (
           <PokemonCard key={pokemon.name} pokemon={pokemon} />
         ))}
