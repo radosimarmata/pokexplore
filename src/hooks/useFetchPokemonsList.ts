@@ -2,10 +2,10 @@ import { useQuery } from '@tanstack/react-query'
 import { fetchPokemons } from '../services/pokemonService'
 import { PokemonResponse } from '../types/pokemon'
 
-const useFetchPokemonsList = () => {
+const useFetchPokemonsList = (page: number) => {
   return useQuery<PokemonResponse, Error>({
-    queryKey: ['pokemons'],
-    queryFn: fetchPokemons,
+    queryKey: ['pokemons', page],
+    queryFn: () => fetchPokemons(page)
   })
 }
 
