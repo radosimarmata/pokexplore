@@ -51,7 +51,7 @@ export interface PokemonDetail {
         back_shiny: string
         back_shiny_female: string | null
       }
-    }[]
+    }
   }
   stats: {
     base_stat: number
